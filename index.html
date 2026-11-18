@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shri Pranav S — AI Engineer</title>
-<meta name="description" content="Software engineer building production AI systems — LLMs, RAG, agentic workflows, and MCP. Chennai, India.">
+<meta name="description" content="Software engineer with 2+ years of experience building production AI systems — LLMs, RAG, agentic workflows, and MCP. Chennai, India.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#0a0c10;--bg-soft:#11141b;--panel:#131822;--line:#222a38;
-    --txt:#e6e9ef;--muted:#8a93a6;--dim:#5c6577;
+    --txt:#e6e9ef;--muted:#8a93a6;--dim:#929caf;
     --accent:#7c9cff;--accent-warm:#f5c97a;--glow:rgba(124,156,255,.14);
     --maxw:1080px;
   }
@@ -30,7 +30,7 @@
   .nav-links{display:flex;gap:26px}
   .nav-links a{color:var(--muted);text-decoration:none;font-size:.82rem;transition:color .2s}
   .nav-links a:hover{color:var(--accent)}
-  @media(max-width:640px){.nav-links{display:none}}
+  @media(max-width:640px){.nav-inner{align-items:flex-start;flex-direction:column;gap:12px}.nav-links{width:100%;gap:18px;overflow-x:auto;padding-bottom:4px}.nav-links a{white-space:nowrap}.wrap{padding:0 20px}header{padding:64px 0 52px}}
   header{padding:96px 0 72px}
   .tag{color:var(--accent);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:22px;opacity:0;animation:rise .7s .1s forwards}
   h1{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(2.6rem,6vw,4.4rem);line-height:1.05;letter-spacing:-.01em;margin-bottom:20px;opacity:0;animation:rise .7s .2s forwards}
@@ -45,7 +45,7 @@
   .btn-pri:hover{transform:translateY(-2px);box-shadow:0 10px 30px -10px var(--accent)}
   .btn-sec{border-color:var(--line);color:var(--txt);background:var(--panel)}
   .btn-sec:hover{border-color:var(--accent);color:var(--accent)}
-  section{padding:60px 0;border-top:1px solid var(--line)}
+  section{scroll-margin-top:120px;padding:60px 0;border-top:1px solid var(--line)}
   .sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:38px}
   .sec-num{font-size:.78rem;color:var(--accent);font-weight:700}
   .sec-title{font-family:'Fraunces',serif;font-weight:500;font-size:1.9rem;letter-spacing:-.01em}
@@ -89,8 +89,14 @@
   footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--dim);font-size:.78rem;text-align:center}
   @keyframes rise{to{opacity:1;transform:translateY(0)}}
   .tag,h1,.lede,.meta,.cta{transform:translateY(16px)}
-  .reveal{opacity:0;transform:translateY(24px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+  .reveal{opacity:1;transform:none}
   .reveal.in{opacity:1;transform:none}
+  a:focus-visible{outline:2px solid var(--accent-warm);outline-offset:5px}
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *,*::before,*::after{animation:none!important;transition:none!important}
+    .tag,h1,.lede,.meta,.cta{opacity:1;transform:none}
+  }
 </style>
 </head>
 <body>
@@ -111,7 +117,7 @@
   <header>
     <div class="tag">AI Engineer · LLMs &amp; Agentic Systems</div>
     <h1>I build production<br><em>AI systems</em> that ship.</h1>
-    <p class="lede">Software engineer in Chennai with 1.5+ years building <b>LLM-powered platforms</b> — RAG pipelines, agentic workflows orchestrated with LangGraph, and MCP integrations. I turn messy operational data into systems people actually trust.</p>
+    <p class="lede">Software engineer in Chennai with 2+ years building <b>LLM-powered platforms</b> — RAG pipelines, agentic workflows orchestrated with LangGraph, and MCP integrations. I turn messy operational data into systems people actually trust.</p>
     <div class="meta">
       <span class="chip">📍 Chennai, India</span>
       <span class="chip">EPAM Systems</span>
@@ -120,6 +126,7 @@
     <div class="cta">
       <a class="btn btn-pri" href="#contact">Get in touch →</a>
       <a class="btn btn-sec" href="#work">View work</a>
+      <a class="btn btn-sec" href="Shri_Pranav_Resume.pdf" download>Download résumé ↓</a>
     </div>
   </header>
 
@@ -215,6 +222,7 @@
       <div class="cred-box">
         <h4>Certifications</h4>
         <ul>
+          <li><b>Claude Certified Architect – Professional</b>, Anthropic · <a href="https://www.credly.com/badges/f3c602ba-74cb-46bb-b157-6c4e70c72180/linked_in_profile" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">verify ↗</a></li>
           <li><b>Claude Certified Architect – Foundations (CCA-F)</b>, Anthropic · <a href="https://verify.skilljar.com/c/h2j8znueooko" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">verify ↗</a></li>
           <li><b>AWS Certified AI Practitioner</b> · <a href="https://www.credly.com/badges/d988aeb3-d407-4bca-b172-f9f0c8a1d917/public_url" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">verify ↗</a></li>
           <li><b>Microsoft Cybersecurity Architect Expert</b> · <a href="https://learn.microsoft.com/en-us/users/pranavs-2357/credentials/6458831c3a63c4b5" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">verify ↗</a></li>
@@ -237,7 +245,7 @@
     <div class="contact-row">
       <a href="mailto:spranav777@gmail.com">✉ Email</a>
       <a href="https://linkedin.com/in/shri-pranav041202" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://github.com/stardust04" target="_blank" rel="noopener">GitHub</a>
+
     </div>
   </section>
 </div>
